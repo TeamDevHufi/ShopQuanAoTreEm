@@ -18,6 +18,10 @@ function Luugiohang()
 {
     var gh = sessionStorage.getItem("giohang");
     giohang = JSON.parse(gh);
+    if(giohang == null)
+    {
+        giohang= new Array();
+    }
 }
 
 function showmycard(){
