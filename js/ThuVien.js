@@ -9,8 +9,20 @@ function themvaogiohang(x)
     var sl = parseInt(boxsp[3].value);
     //cho vào mảng
     var sp = new Array(hinh, ten, gia, sl);
-    
-    giohang.push(sp);
+    // kiểm tra trong giỏ hàng
+    var kt=0;
+    for(let i=0;i<giohang.length;i++){
+        if(giohang[i][1]== ten){
+            kt=1;
+            sl+=parseInt(giohang[i][3]);
+            giohang[i][3]=sl
+            break;
+        }
+    } 
+    if(kt ==0){
+        // thêm mới-add to cart
+        giohang.push(sp);
+    }
     sessionStorage.setItem("giohang", JSON.stringify(giohang));
 }
 
