@@ -1,0 +1,1378 @@
+
+                /************************************/
+                /* Màn hình Tablet*/
+                /************************************************************************************************/
+               
+                .web{
+                    width: 150%;
+                    object-fit: cover;
+                    height: 500px;
+                    font-size: 40px;
+                    margin: auto;
+                    display: grid;
+                    grid-template-columns: 0.2fr 1fr 1.5fr 1fr; 
+                    grid-template-rows: 200px 750px 400px 1000px 260px 50px;
+                    }
+                    /************************************/
+                    /*(trang chủ) Menu*/
+                    /************************************/
+                    .thanhmenu{
+                        grid-column: 1/-1;
+                        grid-row: 1/2;
+                        position: fixed;
+                        width: 100%;
+                    }
+                    .search-bar input{
+                        width: 500px;
+                        height: 50px;
+                        border-radius: 10px 10px 10px 10px;
+                        margin: 30px 20px 5px 0;
+                    } 
+                    i.fa.fa-search{
+                    margin-left:-50px;
+                    }
+                    .icon{
+                        float: right;
+                        margin-right: 30px;
+                        font-size: 40px;
+                        margin: 0 0 25px 0;
+                    }
+                    ul {
+                        list-style-type: none;
+                    }
+                    nav {
+                        background-color: black;
+                    }
+                    #main-menu {
+                        display: flex;
+                        font-size: 25px;
+                    }
+                    nav #main-menu li a {
+                        color: #fff;
+                        text-decoration: none;
+                        display: block;
+                        padding: 8px 15px;
+                    }
+                    nav #main-menu li:hover a {
+                        background: black;
+                        transition: all 0.5s;
+                        border: 1px solid white;
+                        background-color:darkcyan;
+                    }
+                    #toggle {
+                        display: none;
+                        background: #353b48;
+                        color: #fff;
+                        text-align: right;
+                        padding: 10px;
+                        font-size: 20px;
+                        cursor: pointer;
+                    }
+                    nav #main-menu li .sub-menu{
+                                position:absolute;
+                                top:0;
+                                display: none;width: 200px;
+                                margin-top: 182px;
+                                font-size: 25px;
+                                margin-left: -34px;
+                            }
+                    nav #main-menu li:hover .sub-menu{
+                                display: block;
+                                width: 200px;
+                                height: 50px;
+                            }
+                    /************************************/
+                    /*(trang chủ) Gio hang*/
+                    /************************************/
+                    .GioHang1{
+                        grid-column: 1/-1;
+                        grid-row: 2/5;
+                        display: grid;
+                        grid-template-columns: 0.2fr 1fr 1.5fr 0.4fr;
+                        grid-template-rows: 750px 400px 500px;
+                    }
+                    .GioHang2{
+                        
+                        grid-column: 2/4;
+                        grid-row: 1/-1;
+                    }
+                    .rowmb{
+                        margin-bottom: 20px;
+                        
+                    }
+                    .rowmb th{
+                        width: 200px;
+                        font-size: 25px;
+                        background-color:chocolate;
+                        text-align: center;
+                        border: 2px solid black;
+                    }
+                    .rowmb td{
+                        width: 200px;
+                        text-align: center;
+                        border: 2px solid black;
+                    }
+                    /************************************/
+                    /*(trang chủ)Thanh công cụ bên trái */
+                    /************************************/
+                    .thanhcongcu{
+                        grid-column: 1/2;
+                        grid-row: 1/-1;
+                    }
+                    .icongiohang{
+                        position: fixed;
+                        margin-top: 250px;
+                        height: 50px;
+                        width: 50px;
+                        background-size: cover;
+                        background-position: center;
+                        border-radius: 50px;
+                    }
+                    .icondienthoai1{
+                        position: fixed;
+                        margin-top: 310px;
+                        height: 50px;
+                        width: 50px;
+                        background-size: cover;
+                        background-position: center;
+                        border-radius: 50px;
+                    }
+                    .icondienthoai2{
+                        position: fixed;
+                        margin-top: 310px;
+                        height: 50px;
+                        width: 70px;
+                        opacity: 0;
+                        transition: 0.1s;
+                        font-size: 20px;
+                        color: black;
+                        line-height: 50px;
+                        text-align: center;
+                    }
+                    .icondienthoai2:hover{
+                        width: 300px;
+                        height: 50px;
+                        opacity: 1;
+                        border-radius: 5px;
+                        background-color: white;
+                    }
+                    .iconmessenger{
+                        position: fixed;
+                        margin-top: 370px;
+                        height: 50px;
+                        width: 50px;
+                        background-size: cover;
+                        background-position: center;
+                        border-radius: 50px;
+                    }
+                    .iconzalo{
+                        position: fixed;
+                        margin-top: 430px;
+                        height: 50px;
+                        width: 50px;
+                        background-size: cover;
+                        background-position: center;
+                        border-radius: 50px;
+                    }
+        
+                    /************************************/
+                    /*(trang chủ)Bìa */
+                    /************************************/
+                    .biadau{
+                            grid-row: 2/3;
+                            grid-column: 1/-1;
+                            display: grid;
+                            grid-template-columns: 1fr;
+                            grid-template-rows: 700px;
+                        }
+                         .biadau p{
+                            font-family: 'Cormorant Garamond', serif;
+                            color:black;
+                            font-size: 50px;
+                            text-align: center;
+                            margin-bottom: 260px;
+                            background-color:chocolate;
+                            opacity: 0.5;
+                            margin-top: 270px;
+                        }
+                    /************************************/
+                        /*(trang chủ)Phần Sản phẩm hot */
+                        /************************************/
+                        .sanphamhot1{
+                            margin-top: 15px;
+                            grid-row: 3/4;
+                            grid-column: 1/-1;
+                            display: grid;
+                            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+                            grid-template-rows: 300px;
+                            background-image: linear-gradient(white,gray);
+                        }
+                        @keyframes sph1 {
+                            0%{ grid-column: 1/2;}
+                            30%{ grid-column: 2/3;}
+                            50%{ grid-column: 3/4;}
+                            75%{ grid-column: 4/5;}
+                            100% {grid-column: 5/6; }
+                        }
+                        .sanphamhot1_hinhsanphamhot1{
+                            margin-top: 100px;
+                            margin-left: 20px;
+                            grid-row: 1/-1;
+                            grid-column: 1/2;
+                            height: 220px;
+                            width: 200px;
+                            background-color: aqua;
+                            animation-name: sph1;
+                            animation-duration: 15s;
+                            animation-iteration-count: infinite;
+                        }
+                        @keyframes sph2 {
+                            0%{grid-column: 2/3;}
+                            30%{grid-column: 3/4;}
+                            50%{grid-column: 4/5;}
+                            75% {grid-column: 5/6;}
+                            100%{grid-column: 1/2;}
+                        }
+                        .sanphamhot1_hinhsanphamhot2{
+                            margin-top: 100px;
+                            margin-left: 20px;
+                            grid-row: 1/-1;
+                            grid-column: 2/3;
+                            height: 220px;
+                            width: 200px;
+                            background-color: red;
+                            animation-name: sph2;
+                            animation-duration: 15s;
+                            animation-iteration-count: infinite;
+                        }
+                        @keyframes sph3 {
+                            0%{grid-column: 3/4;}
+                            30%{grid-column: 4/5;}
+                            50% {grid-column: 5/6;}
+                            75%{grid-column: 1/2;}
+                            100%{grid-column: 2/3;}
+                        }
+                        .sanphamhot1_hinhsanphamhot3{
+                            margin-top: 100px;
+                            margin-left: 20px;
+                            grid-row: 1/-1;
+                            grid-column: 3/4;
+                            height: 220px;
+                            width: 200px;
+                            background-color: purple;
+                            animation-name: sph3;
+                            animation-duration: 15s;
+                            animation-iteration-count: infinite;
+                        }
+                        @keyframes sph4 {
+                            0%{grid-column: 4/5;}
+                            30% {grid-column: 5/6;}
+                            50%{grid-column: 1/2;}
+                            75%{grid-column: 2/3;}
+                            100%{grid-column: 3/4;}
+                        }
+                        .sanphamhot1_hinhsanphamhot4{
+                            margin-top: 100px;
+                            margin-left: 20px;
+                            grid-row: 1/-1;
+                            grid-column: 4/5;
+                            height: 220px;
+                            width: 200px;
+                            background-color:brown;
+                            animation-name: sph4;
+                            animation-duration: 15s;
+                            animation-iteration-count: infinite;
+                        }
+                        @keyframes sph5 {
+                            0% {grid-column: 5/6;}
+                            30%{grid-column: 1/2;}
+                            50%{grid-column: 2/3;}
+                            75%{grid-column: 3/4;}
+                            100%{grid-column: 4/5;}
+                        }
+                        .sanphamhot1_hinhsanphamhot5{
+                            margin-top: 100px;
+                            margin-left: 20px;
+                            grid-row: 1/-1;
+                            grid-column: 5/6;
+                            height: 220px;
+                            width: 200px;
+                            background-color:darkcyan;
+                            animation-name: sph5;
+                            animation-duration: 15s;
+                            animation-iteration-count: infinite;
+                        }
+                        .sanphamhot1 p{
+                            grid-row: 1/-1;
+                            grid-column: 1/-1;
+                            margin-top: 15px;
+                            margin-left: 15px;
+                            font-family: 'Roboto Flex', sans-serif;
+                            font-weight: bolder;
+                        }
+                        /************************************/
+                        /*(trang chủ)Phần Sản phẩm hot */
+                        /************************************/
+                        .sanphammoi{
+                            margin-top: 15px;
+                            grid-row: 4/5;
+                            grid-column: 1/-1;
+                            display: grid;
+                            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+                            grid-template-rows: 300px;
+                        }
+                        .hinhsanphammoi1{margin-top: 190px;
+                            margin-left: 20px; grid-row: 1/-1;
+                            grid-column: 1/2; height: 220px;
+                            width: 200px; background-color: aqua;
+                        }
+                        .hinhsanphammoi2{
+                            margin-top: 190px;margin-left: 20px;
+                            grid-row: 1/-1; grid-column: 2/3;
+                            height: 220px; width: 200px;
+                            background-color: red;
+                        }
+                        .hinhsanphammoi3{
+                            margin-top: 190px;margin-left: 20px;
+                            grid-row: 1/-1;grid-column: 3/4;
+                            height: 220px; width: 200px;
+                            background-color: purple;
+                        }
+                        .hinhsanphammoi4{
+                            margin-top: 190px; margin-left: 20px;
+                            grid-row: 1/-1; grid-column: 4/5;
+                            height: 220px; width: 200px;
+                            background-color:brown;
+                        }
+                        .hinhsanphammoi5{
+                            margin-top: 190px;  margin-left: 20px;
+                            grid-row: 1/-1;  grid-column: 5/6;
+                            height: 220px; width: 200px;
+                            background-color:darkcyan;
+                        }
+                        .hinhsanphammoi6{
+                            margin-top: 610px;  margin-left: 20px;
+                            grid-row: 1/-1; grid-column: 1/2;
+                            height: 220px; width: 200px;
+                            background-color: aqua;
+                        }
+                        .hinhsanphammoi7{
+                            margin-top: 610px;   margin-left: 20px;
+                            grid-row: 1/-1;  grid-column: 2/3;
+                            height: 220px;   width: 200px;
+                            background-color: red;
+                        }
+                        .hinhsanphammoi8{
+                            margin-top: 610px;  margin-left: 20px;
+                            grid-row: 1/-1; grid-column: 3/4;
+                            height: 220px; width: 200px;
+                            background-color: purple;
+                        }
+                        .hinhsanphammoi9{
+                            margin-top: 610px;  margin-left: 20px;
+                            grid-row: 1/-1; grid-column: 4/5;
+                            height: 220px; width: 200px;
+                            background-color:brown;
+                        }
+                        .hinhsanphammoi10{
+                            margin-top: 610px; margin-left: 20px;
+                            grid-row: 1/-1;  grid-column: 5/6;
+                            height: 220px;  width: 200px;
+                            background-color:darkcyan;
+                        }
+                        .sanphammoi p{
+                            grid-row: 1/-1;
+                            grid-column: 1/-1;
+                            font-family: 'Roboto Flex', sans-serif;
+                            margin: auto;
+                            margin-top: 60px;
+                            font-weight: bolder;
+                        }
+                        .sanphammoi a{text-decoration: none; color: chocolate;}
+                    /************************************/
+                    /*(trang chủ)Phần Giữa */
+                    /************************************/
+                        .middle
+                        {
+                            grid-row: 2/5;
+                            grid-column: 1/-1;
+                            margin-left: 60px;
+                        }
+                        .middle h1{
+                            text-align: center;
+                            font-weight: bolder;
+                        }
+                        .middle h3{
+                            margin-top: 50px;
+                            font-weight: bolder;
+                        }
+                        .middle h4{
+                            margin-top: 50px;
+                        }
+                    /************************************/
+                    /*(trang chủ)Phần HỖ TRỢ - CHÍNH SÁCH MUA HÀNG*/
+                    /************************************/
+                    .tail{
+                        border-top: 1px solid black;
+                        grid-row: 5/6;
+                        grid-column: 1/-1;
+                        display: grid;
+                        grid-template-columns: 1fr 1fr 1fr 1fr;
+                        grid-template-rows: 300px;
+                    }
+                    .tail h4{
+                        font-weight: bolder;
+                        font-size: 25px;
+                    }
+                    .tail a{
+                        text-decoration: none;
+                        color: black;
+                        font-size: 20px;
+                    }
+                    .htkh{
+                        grid-column: 1/2;
+                        grid-row: 1/-1;
+                        margin-left: 80px;
+                    }
+                    .htkh2{
+                        grid-column: 2/3;
+                        grid-row: 1/-1;
+                        margin-left: 80px;
+                    }
+                    .htkh3{
+                        grid-column: 3/4;
+                        grid-row: 1/-1;
+                        margin-left: 80px;
+                    }
+                    .htkh4{
+                        height: 130px;
+                        width: 300px;
+                        float: right;
+                        margin-top: 40px;
+                        margin-right: 50px;
+                        object-fit:cover;
+                        background-size: 100%;
+                    }
+                    /************************************/
+                        /*(trang chủ)Phần copyright*/
+                    /************************************/
+                    .lasttail{
+                        grid-row: 6/7;
+                        grid-column: 1/-1;
+                        display: grid;
+                        background-color: black;
+                    }
+                    .lasttail1{
+                        margin-top: 30px;
+                        margin: auto;
+                        color: white;
+                        font-size: 20px;
+                    }
+                    /************************************/
+                    @media screen and (min-width:1050px)
+                    {
+                        /* Màn hình máy tính*/
+                        /**************************************************************************************************/
+                        .web{
+                        max-width: 100%;
+                        object-fit: cover;
+                        height: 500px;
+                        font-size: 40px;
+                        margin: auto;
+                        display: grid;
+                        grid-template-columns: 0.2fr 1fr 1.5fr 1fr;
+                        grid-template-rows: 150px 750px 400px 1000px 300px 50px;
+                        }
+                        /************************************/
+                        /*(trang chủ) Menu*/
+                        /************************************/
+                        .thanhmenu{
+                            grid-column: 1/-1;
+                            grid-row: 1/2;
+                            position: fixed;
+                            width: 100%;
+                        }
+                        .search-bar input{
+                            width: 500px;
+                            height: 50px;
+                            border-radius: 10px 10px 10px 10px;
+                            margin: 30px 20px 5px 0;
+                        } 
+                        i.fa.fa-search{
+                        margin-left:-50px;
+                        }
+                        .icon{
+                            float: right;
+                            margin-right: 30px;
+                            font-size: 40px;
+                            margin: 0 0 25px 0;
+                        }
+                        ul {
+                            list-style-type: none;
+                        }
+                        nav {
+                            background-color: black;
+                        }
+                        #main-menu {
+                            display: flex;
+                            font-size: 25px;
+                        }
+                        nav #main-menu li a {
+                            color: #fff;
+                            text-decoration: none;
+                            display: block;
+                            padding: 8px 15px;
+                        }
+                        nav #main-menu li:hover a {
+                            transition: all 0.5s;
+                            border: 1px solid white;
+                            background-color:darkcyan;
+                        }
+                        #toggle {
+                            display: none;
+                            background: #353b48;
+                            color: #fff;
+                            text-align: right;
+                            padding: 10px;
+                            font-size: 20px;
+                            cursor: pointer;
+                        }
+                        nav #main-menu li .sub-menu{
+                                    position:absolute;
+                                    top:0;
+                                    display: none;width: 200px;
+                                    margin-top: 182px;
+                                    font-size: 25px;
+                                    margin-left: -34px;
+                                }
+                        nav #main-menu li:hover .sub-menu{
+                                    display: block;
+                                    width: 200px;
+                                    height: 50px;
+                                }
+                        /************************************/
+                        /*(trang chủ) Gio hang*/
+                        /************************************/
+                        .GioHang1{
+                            
+                            grid-column: 1/-1;
+                            grid-row: 2/5;
+                            display: grid;
+                            grid-template-columns: 0.2fr 1fr 1.5fr 0.4fr;
+                            grid-template-rows: 750px 400px 500px;
+                        }
+                        .GioHang2{
+                            
+                            grid-column: 2/4;
+                            grid-row: 1/-1;
+                        }
+                        .rowmb{
+                            margin-bottom: 20px;
+                            
+                        }
+                        .rowmb th{
+                            width: 200px;
+                            font-size: 25px;
+                            background-color:chocolate;
+                            text-align: center;
+                            border: 2px solid black;
+                        }
+                        .rowmb td{
+                            width: 200px;
+                            text-align: center;
+                            border: 2px solid black;
+                        }
+                        /************************************/
+                        /*(trang chủ)Thanh công cụ bên trái */
+                        /************************************/
+                        .thanhcongcu{
+                            grid-column: 1/2;
+                            grid-row: 1/-1;
+                        }
+                        .icongiohang{
+                            position: fixed;
+                            margin-top: 200px;
+                            height: 50px;
+                            width: 50px;
+                            background-size: cover;
+                            background-position: center;
+                            border-radius: 50px;
+                        }
+                        .icondienthoai1{
+                            position: fixed;
+                            margin-top: 260px;
+                            height: 50px;
+                            width: 50px;
+                            background-size: cover;
+                            background-position: center;
+                            border-radius: 50px;
+                        }
+                        .icondienthoai2{
+                            position: fixed;
+                            margin-top: 260px;
+                            height: 50px;
+                            width: 70px;
+                            opacity: 0;
+                            transition: 0.1s;
+                            font-size: 20px;
+                            color: black;
+                            line-height: 50px;
+                            text-align: center;
+                        }
+                        .icondienthoai2:hover{
+                            width: 300px;
+                            height: 50px;
+                            opacity: 1;
+                            border-radius: 5px;
+                            background-color: white;
+                        }
+                        .iconmessenger{
+                            position: fixed;
+                            margin-top: 320px;
+                            height: 50px;
+                            width: 50px;
+                            background-size: cover;
+                            background-position: center;
+                            border-radius: 50px;
+                        }
+                        .iconzalo{
+                            position: fixed;
+                            margin-top: 380px;
+                            height: 50px;
+                            width: 50px;
+                            background-size: cover;
+                            background-position: center;
+                            border-radius: 50px;
+                        }
+        
+                        /************************************/
+                        /*(trang chủ)Bìa */
+                        /************************************/
+                        .biadau{
+                            grid-row: 2/3;
+                            grid-column: 1/-1;
+                            display: grid;
+                            grid-template-columns: 1fr;
+                            grid-template-rows: 700px;
+                        }
+                         .biadau p{
+                            font-family: 'Cormorant Garamond', serif;
+                            color:black;
+                            font-size: 50px;
+                            text-align: center;
+                            margin-top: 270px;
+                            background-color:chocolate;
+                            opacity: 0.8;
+                        }
+                        
+                        /************************************/
+                        /*(trang chủ)Phần Sản phẩm hot */
+                        /************************************/
+                        .sanphamhot1{
+                            margin-top: 15px;
+                            grid-row: 3/4;
+                            grid-column: 1/-1;
+                            display: grid;
+                            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+                            grid-template-rows: 300px;
+                            background-image: linear-gradient(white,gray);
+                        }
+                        @keyframes sph1 {
+                            0%{ grid-column: 1/2;}
+                            30%{ grid-column: 2/3;}
+                            50%{ grid-column: 3/4;}
+                            75%{ grid-column: 4/5;}
+                            100% {grid-column: 5/6; }
+                        }
+                        .sanphamhot1_hinhsanphamhot1{
+                            margin-top: 100px;
+                            margin-left: 20px;
+                            grid-row: 1/-1;
+                            grid-column: 1/2;
+                            height: 220px;
+                            width: 200px;
+                            background-color: aqua;
+                            animation-name: sph1;
+                            animation-duration: 15s;
+                            animation-iteration-count: infinite;
+                        }
+                        @keyframes sph2 {
+                            0%{grid-column: 2/3;}
+                            30%{grid-column: 3/4;}
+                            50%{grid-column: 4/5;}
+                            75% {grid-column: 5/6;}
+                            100%{grid-column: 1/2;}
+                        }
+                        .sanphamhot1_hinhsanphamhot2{
+                            margin-top: 100px;
+                            margin-left: 20px;
+                            grid-row: 1/-1;
+                            grid-column: 2/3;
+                            height: 220px;
+                            width: 200px;
+                            background-color: red;
+                            animation-name: sph2;
+                            animation-duration: 15s;
+                            animation-iteration-count: infinite;
+                        }
+                        @keyframes sph3 {
+                            0%{grid-column: 3/4;}
+                            30%{grid-column: 4/5;}
+                            50% {grid-column: 5/6;}
+                            75%{grid-column: 1/2;}
+                            100%{grid-column: 2/3;}
+                        }
+                        .sanphamhot1_hinhsanphamhot3{
+                            margin-top: 100px;
+                            margin-left: 20px;
+                            grid-row: 1/-1;
+                            grid-column: 3/4;
+                            height: 220px;
+                            width: 200px;
+                            background-color: purple;
+                            animation-name: sph3;
+                            animation-duration: 15s;
+                            animation-iteration-count: infinite;
+                        }
+                        @keyframes sph4 {
+                            0%{grid-column: 4/5;}
+                            30% {grid-column: 5/6;}
+                            50%{grid-column: 1/2;}
+                            75%{grid-column: 2/3;}
+                            100%{grid-column: 3/4;}
+                        }
+                        .sanphamhot1_hinhsanphamhot4{
+                            margin-top: 100px;
+                            margin-left: 20px;
+                            grid-row: 1/-1;
+                            grid-column: 4/5;
+                            height: 220px;
+                            width: 200px;
+                            background-color:brown;
+                            animation-name: sph4;
+                            animation-duration: 15s;
+                            animation-iteration-count: infinite;
+                        }
+                        @keyframes sph5 {
+                            0% {grid-column: 5/6;}
+                            30%{grid-column: 1/2;}
+                            50%{grid-column: 2/3;}
+                            75%{grid-column: 3/4;}
+                            100%{grid-column: 4/5;}
+                        }
+                        .sanphamhot1_hinhsanphamhot5{
+                            margin-top: 100px;
+                            margin-left: 20px;
+                            grid-row: 1/-1;
+                            grid-column: 5/6;
+                            height: 220px;
+                            width: 200px;
+                            background-color:darkcyan;
+                            animation-name: sph5;
+                            animation-duration: 15s;
+                            animation-iteration-count: infinite;
+                        }
+                        .sanphamhot1 p{
+                            grid-row: 1/-1;
+                            grid-column: 1/-1;
+                            margin-top: 15px;
+                            margin-left: 50px;
+                            font-family: 'Roboto Flex', sans-serif;
+                            font-weight: bolder;
+                        }
+                        /************************************/
+                        /*(trang chủ)Phần Sản phẩm mới */
+                        /************************************/
+                        .sanphammoi{
+                            margin-top: 15px;
+                            grid-row: 4/5;
+                            grid-column: 1/-1;
+                            display: grid;
+                            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+                            grid-template-rows: 300px;
+                        }
+                        .hinhsanphammoi1{margin-top: 190px;
+                            margin-left: 20px; grid-row: 1/-1;
+                            grid-column: 1/2; height: 220px;
+                            width: 200px; background-color: aqua;
+                        }
+                        .hinhsanphammoi2{
+                            margin-top: 190px;margin-left: 20px;
+                            grid-row: 1/-1; grid-column: 2/3;
+                            height: 220px; width: 200px;
+                            background-color: red;
+                        }
+                        .hinhsanphammoi3{
+                            margin-top: 190px;margin-left: 20px;
+                            grid-row: 1/-1;grid-column: 3/4;
+                            height: 220px; width: 200px;
+                            background-color: purple;
+                        }
+                        .hinhsanphammoi4{
+                            margin-top: 190px; margin-left: 20px;
+                            grid-row: 1/-1; grid-column: 4/5;
+                            height: 220px; width: 200px;
+                            background-color:brown;
+                        }
+                        .hinhsanphammoi5{
+                            margin-top: 190px;  margin-left: 20px;
+                            grid-row: 1/-1;  grid-column: 5/6;
+                            height: 220px; width: 200px;
+                            background-color:darkcyan;
+                        }
+                        .hinhsanphammoi6{
+                            margin-top: 610px;  margin-left: 20px;
+                            grid-row: 1/-1; grid-column: 1/2;
+                            height: 220px; width: 200px;
+                            background-color: aqua;
+                        }
+                        .hinhsanphammoi7{
+                            margin-top: 610px;   margin-left: 20px;
+                            grid-row: 1/-1;  grid-column: 2/3;
+                            height: 220px;   width: 200px;
+                            background-color: red;
+                        }
+                        .hinhsanphammoi8{
+                            margin-top: 610px;  margin-left: 20px;
+                            grid-row: 1/-1; grid-column: 3/4;
+                            height: 220px; width: 200px;
+                            background-color: purple;
+                        }
+                        .hinhsanphammoi9{
+                            margin-top: 610px;  margin-left: 20px;
+                            grid-row: 1/-1; grid-column: 4/5;
+                            height: 220px; width: 200px;
+                            background-color:brown;
+                        }
+                        .hinhsanphammoi10{
+                            margin-top: 610px; margin-left: 20px;
+                            grid-row: 1/-1;  grid-column: 5/6;
+                            height: 220px;  width: 200px;
+                            background-color:darkcyan;
+                        }
+                        .sanphammoi p{
+                            grid-row: 1/-1;
+                            grid-column: 1/-1;
+                            font-family: 'Roboto Flex', sans-serif;
+                            margin: auto;
+                            margin-top: 60px;
+                            font-weight: bolder;
+                        }
+                        .sanphammoi a{text-decoration: none; color: chocolate;}
+                        /************************************/
+                        /*(trang chủ)Phần Giữa */
+                        /************************************/
+                        .middle
+                        {
+                            grid-row: 2/5;
+                            grid-column: 1/-1;
+                            margin-left: 60px;
+                        }
+                        .middle h1{
+                            text-align: center;
+                            font-weight: bolder;
+                        }
+                        .middle h3{
+                            margin-top: 50px;
+                            font-weight: bolder;
+                        }
+                        .middle h4{
+                            margin-top: 50px;
+                        }
+                        /************************************/
+                        /*(trang chủ)Phần HỖ TRỢ - CHÍNH SÁCH MUA HÀNG*/
+                        /************************************/
+                        .tail{
+                            border-top: 1px solid black;
+                            grid-row: 5/6;
+                            grid-column: 1/-1;
+                            display: grid;
+                            grid-template-columns: 1.2fr 1.2fr 1.2fr 0.1fr;
+                            grid-template-rows: 300px;
+                        }
+                        .tail h4{
+                            font-weight: bolder;
+                            font-size: 25px;
+                        }
+                        .tail a{
+                            text-decoration: none;
+                            color: black;
+                            font-size: 20px;
+                        }
+                        .htkh{
+                            grid-column: 1/2;
+                            grid-row: 1/-1;
+                            margin-left: 60px;
+                        }
+                        .htkh2{
+                            grid-column: 2/3;
+                            grid-row: 1/-1;
+                            margin-left: 80px;
+                        }
+                        .htkh3{
+                            grid-column: 3/4;
+                            grid-row: 1/-1;
+                            margin-left: 80px;
+                        }
+                        .htkh4{
+                            height: 110px;
+                            width: 260px;
+                            float: right;
+                            margin-top: 40px;
+                            margin-right: 10px;
+                            object-fit:cover;
+                            background-size: 100%;
+                        }
+                        /************************************/
+                         /*(trang chủ)Phần copyright*/
+                        /************************************/
+                        .lasttail{
+                            grid-row: 6/7;
+                            grid-column: 1/-1;
+                            display: grid;
+                            background-color: black;
+                        }
+                        .lasttail1{
+                            margin-top: 30px;
+                            margin: auto;
+                            color: white;
+                            font-size: 20px;
+                        }
+                    }
+                /************************************/
+                /* (Màn hình Điện Thoại)*/
+                /************************************************************************************************/
+                @media screen and (max-width:760px)
+                {
+                .web{
+                    width: 310%;
+                    object-fit: cover;
+                    height: 500px;
+                    font-size: 40px;
+                    margin: auto;
+                    display: grid;
+                    grid-template-columns: 0.2fr 1fr 1.5fr 1fr;
+                    grid-template-rows: 200px 750px 400px 1000px 460px 50px;
+                    }
+                    /************************************/
+                    /*(trang chủ) Menu (Màn hình Điện Thoại)*/
+                    /************************************/
+                    .thanhmenu{
+                        grid-column: 1/-1;
+                        grid-row: 1/2;
+                        position: fixed;
+                        width: 100%;
+                    }
+                    .search-bar input{
+                        width: 500px;
+                        height: 50px;
+                        border-radius: 10px 10px 10px 10px;
+                        margin: 30px 20px 5px 0;
+                        display: none;
+                    } 
+                    i.fa.fa-search{
+                    margin-left:-50px;
+                    }
+                    .icon{
+                        float: right;
+                        margin-right: 30px;
+                        font-size: 40px;
+                        margin: 0 0 25px 0;
+                    }
+                    #main-menu {
+                        flex-direction: column;
+                        text-align: center;
+                    }
+                    #toggle {
+                        display: block;
+                    }
+                    nav {
+                        display: none;
+                    }
+                    /************************************/
+                    /*(trang chủ) Gio hang (Màn hình Điện Thoại)*/
+                    /************************************/
+                    .GioHang1{
+                        grid-column: 1/-1;
+                        grid-row: 2/5;
+                        display: grid;
+                        grid-template-columns: 0.2fr 1fr 1.5fr 0.4fr;
+                        grid-template-rows: 750px 400px 500px;
+                    }
+                    .GioHang2{
+                        
+                        grid-column: 2/4;
+                        grid-row: 1/-1;
+                    }
+                    .rowmb{
+                        margin-bottom: 20px;
+                        
+                    }
+                    .rowmb th{
+                        width: 200px;
+                        font-size: 25px;
+                        background-color:chocolate;
+                        text-align: center;
+                        border: 2px solid black;
+                    }
+                    .rowmb td{
+                        width: 200px;
+                        text-align: center;
+                        border: 2px solid black;
+                    }
+                    /************************************/
+                    /*(trang chủ)Thanh công cụ bên trái (Màn hình Điện Thoại)*/
+                    /************************************/
+                    .thanhcongcu{
+                        grid-column: 1/2;
+                        grid-row: 1/-1;
+                    }
+                    .icongiohang{
+                        position: fixed;
+                        margin-top: 600px;
+                        height: 50px;
+                        width: 50px;
+                        background-size: cover;
+                        background-position: center;
+                        border-radius: 50px;
+                    }
+                    .icondienthoai1{
+                        position: fixed;
+                        margin-top: 660px;
+                        height: 50px;
+                        width: 50px;
+                        background-size: cover;
+                        background-position: center;
+                        border-radius: 50px;
+                    }
+                    .icondienthoai2{
+                        position: fixed;
+                        margin-top: 660px;
+                        height: 50px;
+                        width: 70px;
+                        opacity: 0;
+                        transition: 0.1s;
+                        font-size: 20px;
+                        color: black;
+                        line-height: 50px;
+                        text-align: center;
+                    }
+                    .icondienthoai2:hover{
+                        width: 300px;
+                        height: 50px;
+                        opacity: 1;
+                        border-radius: 5px;
+                        background-color: white;
+                    }
+                    .iconmessenger{
+                        position: fixed;
+                        margin-top: 720px;
+                        height: 50px;
+                        width: 50px;
+                        background-size: cover;
+                        background-position: center;
+                        border-radius: 50px;
+                    }
+                    .iconzalo{
+                        position: fixed;
+                        margin-top: 780px;
+                        height: 50px;
+                        width: 50px;
+                        background-size: cover;
+                        background-position: center;
+                        border-radius: 50px;
+                    }
+        
+                    /************************************/
+                    /*(trang chủ)Bìa (Màn hình Điện Thoại)*/
+                    /************************************/
+                    .biadau{
+                            grid-row: 2/3;
+                            grid-column: 1/-1;
+                            display: grid;
+                            grid-template-columns: 1fr;
+                            grid-template-rows: 700px;
+                        }
+                         .biadau p{
+                            font-family: 'Cormorant Garamond', serif;
+                            color:black;
+                            font-size: 50px;
+                            text-align: center;
+                            margin-top: 260px;
+                            background-color:chocolate;
+                            opacity: 0.5;
+                        }
+                    /************************************/
+                    /*(trang chủ)Phần Sản phẩm hot (Màn hình Điện Thoại)*/
+                    /************************************/
+                    .sanphamhot1{
+                        margin-top: 15px;
+                        grid-row: 3/4;
+                        grid-column: 1/-1;
+                        display: grid;
+                        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+                        grid-template-rows: 300px;
+                        background-image: linear-gradient(white,gray);
+                    }
+                    @keyframes sph1 {
+                        0%{ grid-column: 1/2;}
+                        30%{ grid-column: 2/3;}
+                        50%{ grid-column: 3/4;}
+                        75%{ grid-column: 4/5;}
+                        100% {grid-column: 5/6; }
+                    }
+                    .sanphamhot1_hinhsanphamhot1{
+                        margin-top: 100px;
+                        margin-left: 20px;
+                        grid-row: 1/-1;
+                        grid-column: 1/2;
+                        height: 220px;
+                        width: 180px;
+                        background-color: aqua;
+                        animation-name: sph1;
+                        animation-duration: 15s;
+                        animation-iteration-count: infinite;
+                    }
+                    @keyframes sph2 {
+                        0%{grid-column: 2/3;}
+                        30%{grid-column: 3/4;}
+                        50%{grid-column: 4/5;}
+                        75% {grid-column: 5/6;}
+                        100%{grid-column: 1/2;}
+                    }
+                    .sanphamhot1_hinhsanphamhot2{
+                        margin-top: 100px;
+                        margin-left: 20px;
+                        grid-row: 1/-1;
+                        grid-column: 2/3;
+                        height: 220px;
+                        width: 180px;
+                        background-color: red;
+                        animation-name: sph2;
+                        animation-duration: 15s;
+                        animation-iteration-count: infinite;
+                    }
+                    @keyframes sph3 {
+                        0%{grid-column: 3/4;}
+                        30%{grid-column: 4/5;}
+                        50% {grid-column: 5/6;}
+                        75%{grid-column: 1/2;}
+                        100%{grid-column: 2/3;}
+                    }
+                    .sanphamhot1_hinhsanphamhot3{
+                        margin-top: 100px;
+                        margin-left: 20px;
+                        grid-row: 1/-1;
+                        grid-column: 3/4;
+                        height: 220px;
+                        width: 180px;
+                        background-color: purple;
+                        animation-name: sph3;
+                        animation-duration: 15s;
+                        animation-iteration-count: infinite;
+                    }
+                    @keyframes sph4 {
+                        0%{grid-column: 4/5;}
+                        30% {grid-column: 5/6;}
+                        50%{grid-column: 1/2;}
+                        75%{grid-column: 2/3;}
+                        100%{grid-column: 3/4;}
+                    }
+                    .sanphamhot1_hinhsanphamhot4{
+                        margin-top: 100px;
+                        margin-left: 20px;
+                        grid-row: 1/-1;
+                        grid-column: 4/5;
+                        height: 220px;
+                        width: 180px;
+                        background-color:brown;
+                        animation-name: sph4;
+                        animation-duration: 15s;
+                        animation-iteration-count: infinite;
+                    }
+                    @keyframes sph5 {
+                        0% {grid-column: 5/6;}
+                        30%{grid-column: 1/2;}
+                        50%{grid-column: 2/3;}
+                        75%{grid-column: 3/4;}
+                        100%{grid-column: 4/5;}
+                    }
+                    .sanphamhot1_hinhsanphamhot5{
+                        margin-top: 100px;
+                        margin-left: 20px;
+                        grid-row: 1/-1;
+                        grid-column: 5/6;
+                        height: 220px;
+                        width: 180px;
+                        background-color:darkcyan;
+                        animation-name: sph5;
+                        animation-duration: 15s;
+                        animation-iteration-count: infinite;
+                    }
+                    .sanphamhot1 p{
+                        grid-row: 1/-1;
+                        grid-column: 1/-1;
+                        margin-top: 15px;
+                        margin-left: 15px;
+                        font-family: 'Roboto Flex', sans-serif;
+                        font-weight: bolder;
+                    }
+                    /************************************/
+                    /*(trang chủ)Phần Sản phẩm mới (Màn hình Điện Thoại)*/
+                    /************************************/
+                    .sanphammoi{
+                        margin-top: 15px;
+                        grid-row: 4/5;
+                        grid-column: 1/-1;
+                        display: grid;
+                        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+                        grid-template-rows: 300px;
+                    }
+                    .hinhsanphammoi1{margin-top: 190px;
+                        margin-left: 20px; grid-row: 1/-1;
+                        grid-column: 1/2; height: 220px;
+                        width: 200px; background-color: aqua;
+                    }
+                    .hinhsanphammoi2{
+                        margin-top: 190px;margin-left: 20px;
+                        grid-row: 1/-1; grid-column: 2/3;
+                        height: 220px; width: 200px;
+                        background-color: red;
+                    }
+                    .hinhsanphammoi3{
+                        margin-top: 190px;margin-left: 20px;
+                        grid-row: 1/-1;grid-column: 3/4;
+                        height: 220px; width: 200px;
+                        background-color: purple;
+                    }
+                    .hinhsanphammoi4{
+                        margin-top: 190px; margin-left: 20px;
+                        grid-row: 1/-1; grid-column: 4/5;
+                        height: 220px; width: 200px;
+                        background-color:brown;
+                    }
+                    .hinhsanphammoi5{
+                        margin-top: 190px;  margin-left: 20px;
+                        grid-row: 1/-1;  grid-column: 5/6;
+                        height: 220px; width: 200px;
+                        background-color:darkcyan;
+                    }
+                    .hinhsanphammoi6{
+                        margin-top: 610px;  margin-left: 20px;
+                        grid-row: 1/-1; grid-column: 1/2;
+                        height: 220px; width: 200px;
+                        background-color: aqua;
+                    }
+                    .hinhsanphammoi7{
+                        margin-top: 610px;   margin-left: 20px;
+                        grid-row: 1/-1;  grid-column: 2/3;
+                        height: 220px;   width: 200px;
+                        background-color: red;
+                    }
+                    .hinhsanphammoi8{
+                        margin-top: 610px;  margin-left: 20px;
+                        grid-row: 1/-1; grid-column: 3/4;
+                        height: 220px; width: 200px;
+                        background-color: purple;
+                    }
+                    .hinhsanphammoi9{
+                        margin-top: 610px;  margin-left: 20px;
+                        grid-row: 1/-1; grid-column: 4/5;
+                        height: 220px; width: 200px;
+                        background-color:brown;
+                    }
+                    .hinhsanphammoi10{
+                        margin-top: 610px; margin-left: 20px;
+                        grid-row: 1/-1;  grid-column: 5/6;
+                        height: 220px;  width: 200px;
+                        background-color:darkcyan;
+                    }
+                    .sanphammoi p{
+                        grid-row: 1/-1;
+                        grid-column: 1/-1;
+                        font-family: 'Roboto Flex', sans-serif;
+                        margin: auto;
+                        margin-top: 60px;
+                        font-weight: bolder;
+                    }
+                    .sanphammoi a{text-decoration: none; color: chocolate;}
+                    /************************************/
+                    /*(trang chủ)Phần Giữa (Màn hình Điện Thoại)*/
+                    /************************************/
+                        .middle
+                        {
+                            grid-row: 2/5;
+                            grid-column: 1/-1;
+                            margin-left: 60px;
+                        }
+                        .middle h1{
+                            text-align: center;
+                            font-weight: bolder;
+                        }
+                        .middle h3{
+                            margin-top: 50px;
+                            font-weight: bolder;
+                        }
+                        .middle h4{
+                            margin-top: 50px;
+                        }
+                    /************************************/
+                    /*(trang chủ)Phần HỖ TRỢ - CHÍNH SÁCH MUA HÀNG(Màn hình Điện Thoại)*/
+                    /************************************/
+                    .tail{
+                        border-top: 1px solid black;
+                        grid-row: 5/6;
+                        grid-column: 1/-1;
+                        display: grid;
+                        grid-template-columns: 1fr 1fr 1fr 1fr;
+                        grid-template-rows: 300px;
+                    }
+                    .tail h4{
+                        font-weight: bolder;
+                        font-size: 25px;
+                    }
+                    .tail a{
+                        text-decoration: none;
+                        color: black;
+                        font-size: 20px;
+                    }
+                    .htkh{
+                        grid-column: 1/2;
+                        grid-row: 1/-1;
+                        margin-left: 80px;
+                    }
+                    .htkh2{
+                        grid-column: 2/3;
+                        grid-row: 1/-1;
+                        margin-left: 80px;
+                    }
+                    .htkh3{
+                        grid-column: 3/4;
+                        grid-row: 1/-1;
+                        margin-left: 80px;
+                    }
+                    .htkh4{
+                        height: 130px;
+                        width: 300px;
+                        float: right;
+                        margin-top: 40px;
+                        margin-right: 50px;
+                        object-fit:cover;
+                        background-size: 100%;
+                    }
+                    /************************************/
+                        /*(trang chủ)Phần copyright(Màn hình Điện Thoại)*/
+                    /************************************/
+                    .lasttail{
+                        grid-row: 6/7;
+                        grid-column: 1/-1;
+                        display: grid;
+                        background-color: black;
+                    }
+                    .lasttail1{
+                        margin-top: 30px;
+                        margin: auto;
+                        color: white;
+                        font-size: 20px;
+                    }
+                }
