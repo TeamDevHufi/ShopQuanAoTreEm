@@ -10,7 +10,7 @@ function themvaogiohang(x)
     //cho vào mảng
     var sp = new Array(hinh, ten, gia, sl);
     
-    giohang.push(sp);console.log(giohang);
+    giohang.push(sp);
     sessionStorage.setItem("giohang", JSON.stringify(giohang));
 }
 
