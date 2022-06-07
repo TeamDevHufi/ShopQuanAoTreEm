@@ -110,7 +110,7 @@ function xoagiohang(x){
             giohang.splice(i,1);
         }
     }
-    LessionStorage.setItem("giohang", JSON.stringify(giohang));
+    sessionStorage.setItem("giohang", JSON.stringify(giohang));
     showgiohang_tranggiohang();
 }
 
@@ -118,6 +118,6 @@ function xoatatca(x){
     var gh = sessionStorage.getItem("giohang");
     var giohang = JSON.parse(gh);
     giohang = [];
-    Luu= sessionStorage.setItem("giohang", JSON.stringify(giohang));
+     sessionStorage.setItem("giohang", JSON.stringify(giohang));
     showgiohang_tranggiohang();
 }
